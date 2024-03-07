@@ -14,3 +14,18 @@ Alice's band plays a Nirvana inspired grunge and has been rated 20 for Heaviness
 The total score should be followed by a colon : and by one of the following quotes: if Alice's band wins: Alice made "Kurt" proud! if Bob's band wins: Bob made "Jeff" proud! if they end up with a draw: that looks like a "draw"! Rock on!
 
 The solution to the example above should therefore appear like '1, 2: Bob made "Jeff" proud!'.
+
+### snack 2
+
+Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+
+
+### snack 3
+
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces. 

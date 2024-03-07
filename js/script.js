@@ -76,7 +76,25 @@ We will consider a, e, i, o, u as vowels for this Kata (but not y).
 
 The input string will only consist of lower case letters and/or spaces.
 */
+let str = 'supercalifragilistichespiralidoso';
 
+getCount(str);
+
+
+function getCount(str) {
+    //array di vocali
+    vowels = ['a', 'e', 'i', 'o', 'u'];
+    numbVowels = 0;
+    //ciclo sulla stringa e confronto ogni carattere vedendo se è contenuto nell'array delle vocali;
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            numbVowels++;
+        }
+    }
+    console.log(numbVowels);
+
+    //return numbVowels;
+}
 
 /* ********************* SNACK 2 *************************
 
