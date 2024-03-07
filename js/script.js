@@ -21,7 +21,7 @@ function solve(a, b) {
     let scoreA = 0;
     let scoreB = 0;
     let message = '';
-    for (i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++) {
         if (a[i] > b[i]) {
             scoreA++;
         } else if (a[i] < b[i]) {
@@ -43,12 +43,38 @@ function solve(a, b) {
 }
 
 /* ********************* SNACK 2 *************************
+Simple, given a string of words, return the length of the shortest word(s).
 
+String will never be empty and you do not need to account for different data types.
 */
+let s = 'bitcoin take over the world maybe who knows perhaps';
+findShort(s);
+
+function findShort(s) {
+    //suddivido la stringa in singoli elementi di un array
+    let arrayStr = s.split(' ');
+    //variabile che conterrà il valore della lunghezza della parola piu corta
+    let shortestLength = 0;
+    //ciclo per confrontare ogni valore con quello della variabile
+    arrayStr.forEach(element => {
+        if (shortestLength === 0) {
+            shortestLength = element.length;
+        } else if (shortestLength > element.length) {
+            shortestLength = element.length
+        }
+    });
+    //ritorno il risultato
+    return shortestLength;
+
+}
 
 
-/* ********************* SNACK 2 *************************
+/* ********************* SNACK 3 *************************
+Return the number (count) of vowels in the given string.
 
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
 */
 
 
