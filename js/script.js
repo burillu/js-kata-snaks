@@ -96,13 +96,32 @@ function getCount(str) {
     //return numbVowels;
 }
 
-/* ********************* SNACK 2 *************************
+/* ********************* SNACK 4 *************************
+You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
 
+Array can contain numbers or strings. X can be either.
+
+Return true if the array contains the value, false if not.
 */
+console.log('************************* SNACK 4 ***********************');
+let a = [66, 101];
+let x = 66;
+//console.log(check(a, x));
+function check(a, x) {
+    // your code here
+    return a.includes(x);
+}
 
+/* ********************* SNACK 5 *************************
+Define a function that removes duplicates from an array of non negative numbers and returns it as a result.
 
-/* ********************* SNACK 2 *************************
+The order of the sequence has to stay the same.
 
+Examples:
+
+Input -> Output
+[1, 1, 2] -> [1, 2]
+[1, 2, 1, 1, 3, 2] -> [1, 2, 3]
 */
 
 
