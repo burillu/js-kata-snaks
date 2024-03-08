@@ -124,6 +124,29 @@ Input -> Output
 [1, 2, 1, 1, 3, 2] -> [1, 2, 3]
 */
 
+console.log('************************* SNACK 5 ***********************');
+snack5();
+function snack5() {
+    let a = [1, 2, 1, 1, 3, 2];
+    distinct(a);
+    function distinct(a) {
+        // filtrare l'array togliendo i duplicati
+        // ciclo foreach
+        let arrayFiltered = [];
+        a.forEach(el => {
+            //se l'elemento non è incluso, lo metto dentro 
+            if (!arrayFiltered.includes(el)) {
+                arrayFiltered.push(el);
+            }
+
+        });
+        console.log(arrayFiltered);
+
+
+        //return [];
+    }
+}
+
 
 /* ********************* SNACK 2 *************************
 
